@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário API</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/viacep.js"></script>
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/mascara.js"></script>
+</head>
+<body>
+
+    <main>      
+
+        <form action="">
+
+        <h2>Insira suas informações</h2>
+
+        <div id="info">
+
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Insira seu nome" required>
+
+            <label for="lastname">Sobrenome</label>
+            <input type="text" id="lastname" placeholder="Insira seu Sobrenome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Melhor email" required>
+
+
+        </div>
+    
+
+
+        
+        <div id="box">
+        
+            
+
+            <label for="i_cep"> CEP</label>
+            <input type="text" id="i_cep" onblur="pesquisa_cep(this.value)" placeholder="Insira seu CEP" required>
+
+
+            <div id="box2">
+
+            <label for="i_rua">Rua</label>
+            <input type="text" id="i_rua" >
+
+            <label for="i_bairro"> Bairro</label>
+            <input type="text" id="i_bairro" >
+
+            </div>
+
+            <div id="box3">
+                
+                <label for="i_cidade">Cidade</label>
+                <input type="text" id="i_cidade" >
+    
+                <label for="i_estado"> Estado</label>
+                <input type="text" id="i_estado" >
+            
+            </div>
+
+
+
+            <input type="submit" value="Cadastrar" id="btt">
+
+        </div>
+
+    </form>
+    
+    </main>
+
+
+
+</body>
+</html>
